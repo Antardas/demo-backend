@@ -1,0 +1,13 @@
+# fly.toml file generated for demo-peacockindia on 2022-09-21T20:42:19+06:00
+
+app = "demo-peacockindia"
+
+[build]
+  builder = "heroku/buildpacks:20"
+
+[env]
+  PORT = "8080"
+
+[[services]]
+  internal_port = 8080
+  protocol = "tcp"
